@@ -1,1 +1,3 @@
-# EESTech-Challenge-Final-Round-2025-Team-Engibeers
+# Smart Gripper Control
+
+Arduino code for Smart Gripper programming using Python GUI
