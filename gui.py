@@ -1,4 +1,3 @@
-
 import sys
 import serial
 import serial.tools.list_ports
@@ -106,9 +105,11 @@ class ArduinoControlGUI(QMainWindow):
         self.button2 = QPushButton("BUTTON2 (Release)")
         self.button2.setCheckable(True)
         self.button2.clicked.connect(self.send_button2)
+        self.reset_btn = QPushButton("Reset")
+        self.reset_btn.clicked.connect(self.send_reset)
         control_layout.addWidget(self.button1)
         control_layout.addWidget(self.button2)
-        
+        control_layout.addWidget(self.reset_btn)
         control_group.setLayout(control_layout)
 
         # Sensor Data Display
@@ -220,11 +221,8 @@ class ArduinoControlGUI(QMainWindow):
                 self.button2.setChecked(False)
                 self.serial_connection.write(b"B20\n")
                 self.serial_connection.write(b"B11\n")
-                # Stop updating predictions
-                self.cam_timer.stop()
             else:
                 self.serial_connection.write(b"B10\n")
-
 
     def send_button2(self):
         if self.serial_connection and self.serial_connection.is_open:
@@ -234,16 +232,16 @@ class ArduinoControlGUI(QMainWindow):
             self.serial_connection.write(b"B21\n")
             QTimer.singleShot(1000, self.release_button2)
 
-            # Resume updating predictions
-            self.cam_timer.start(1000)
-
-
     def release_button2(self):
         if self.serial_connection and self.serial_connection.is_open:
             self.button2.setChecked(False)
             self.serial_connection.write(b"B20\n")
 
-    
+    def send_reset(self):
+        if self.serial_connection and self.serial_connection.is_open:
+            self.serial_connection.write(b"RESET\n")
+            self.button1.setChecked(False)
+            self.button2.setChecked(False)
 
     def read_serial_data(self):
         if not (self.serial_connection and self.serial_connection.is_open):
