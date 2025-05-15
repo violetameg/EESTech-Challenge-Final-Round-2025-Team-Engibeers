@@ -1,0 +1,25 @@
+Magnetic Skin: 
+Raunaq Bhirangi, Tess Hellebrekers, Carmel Majidi and Abhinav Gupta. ReSkin: versatile, replaceable, lasting tactile skins. CoRL 2021.
+Hu, H., Zhang, C., Lai, X. et al. Large-area magnetic skin for multi-point and multi-scale tactile sensing with super-resolution. npj Flex Electron 8, 42 (2024).
+
+Robotic Gripper projects with tactile sensors: 
+Riffo, V & Pieringer, Christian & Flores, S & Carrasco, C. (2022). Object recognition using tactile sensing in a robotic gripper. Insight - Non-Destructive Testing and Condition Monitoring. 64. 383-392. 10.1784/insi.2022.64.7.383.
+V. H. Sundaram, R. Bhirangi, M. E. Rentschler, A. Gupta and T. Hellebrekers, "DragonClaw: A low-cost pneumatic gripper with integrated magnetic sensing," 2023 IEEE International Conference on Soft Robotics (RoboSoft), Singapore, Singapore, 2023, pp. 1-8, doi: 10.1109/RoboSoft55895.2023.10122024. keywords: {Medical devices;Magnetic sensors;Thumb;Soft robotics;Robot sensing systems;Rapid prototyping;Distance measurement},
+
+3D Magnetic Sensor Evaluation Kit Datasheet: https://www.infineon.com/dgdl/Infineon-Infineon-3DMS2GO_TLv493D-A1B6-UM-v01_02-EN-UM-v01-UserManual-v01_02-EN.pdf?fileId=5546d462525dbac40152ac4ca1d318c2
+
+BLDC Shield for Arduino Datasheet: https://eu.mouser.com/datasheet/2/196/Infineon_Motor_Control_Shield_with_IFX007T_for_Ard-3132035.pdf
+
+Angle Sensor Datasheet: https://www.infineon.com/dgdl/Infineon-TLE5012B_Exxxx-DataSheet-v02_01-EN.pdf?fileId=db3a304334fac4c601350f31c43c433f
+
+XMC4000 Family Evaluation Boards Datasheet: https://www.infineon.com/dgdl/Infineon-Board_User_Manual_XMC4700_XMC4800_Relax_Kit_Series-UserManual-v01_06-EN.pdf?fileId=5546d46250cc1fdf01513f8e052d07fc
+
+XMC for Arduino: https://xmc-arduino.readthedocs.io/en/latest/index.html
+
+Arduino PID Library: https://github.com/br3ttb/Arduino-PID-Library
+
+SimpleFOC Arduino Library Documentation: https://docs.simplefoc.com/
+
+Streamlit Documentation: https://docs.streamlit.io/
+
+PyQt5 Documentation: https://www.riverbankcomputing.com/static/Docs/PyQt5/#
